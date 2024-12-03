@@ -1,0 +1,28 @@
+usuFidelidade=int(input('Você faz parte do Clube Fidelidade? 1- Sim | 2- Não: '))
+
+if(usuFidelidade==1):
+    valor=valor-2
+    print('Você ganhou R$2,00 de desconto em qualquer taxa de entrega aplicavél.')
+else:
+    print('Você não ganhará nenhum desconto.')
+
+valor=int(input('Insira o Valor da seu produto: '))
+
+if (valor<10):
+    valor=valor+5
+    print('Taxa de R$5 Acrescida para entrega.')
+elif(valor>=10 and valor<20):
+    valor=valor+3
+    print('taxa de R$3 Acrescida para entrega.')
+elif(valor>20):
+    print('Nenhuma taxa foi aplicada. Entrega Gratuita.')
+    
+print('O valor da entrega é de: ', valor)
+
+
+
+
+
+
+
+
